@@ -10,6 +10,7 @@
     function updateUTCTime() {
         const currentTime = new Date().toUTCString();
         document.getElementById("currentUTCTime").textContent = currentTime;
+
     }
 
     function setTrack() {
@@ -18,6 +19,8 @@
     }
 
     
+        setInterval(updateUTCTime, 1000);
+
     updateDayOfWeek();
     updateUTCTime();
     setTrack();
