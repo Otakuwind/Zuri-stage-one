@@ -8,9 +8,10 @@
 
   
     function updateUTCTime() {
-        const currentTime = new Date().toUTCString();
-        document.getElementById("currentUTCTime").textContent = currentTime;
-
+         const currentTime = new Date().toUTCString();
+            const currentTimeUTC = currentTime.replace("GMT", "UTC"); 
+            document.getElementById("currentUTCTime").textContent = currentTimeUTC;
+       
     }
 
     function setTrack() {
